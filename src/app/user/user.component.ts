@@ -16,6 +16,7 @@ export class UserComponent {
     //this is to access properties of a class from within the same class
   };
   onSelectUser() {
-    console.log("Clicked!")
+    const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
+    this.selectedUser = DUMMY_USERS[randomIndex];
   }
 }
